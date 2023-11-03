@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:padding="35dp"
+    android:background="@drawable/fondo"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtAddAsig"
+        android:text="Agregar Asignaturas"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edtAsig"
+        android:hint="Ingrese asignatura"
+        android:layout_width="0dp"
+        android:textColorHint="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAddAsig"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btnAsig" />
+
+    <Button
+        android:id="@+id/btnAsig"
+        android:text="Agregar"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAddAsig"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txtAsig"
+        android:text="Asignaturas"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAsig"/>
+
+    <Spinner
+        android:id="@+id/spAsig"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAsig"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:layout_toLeftOf="@id/btnSelec"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnSelec"
+        android:text="Seleccionar"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAsig"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txtNotas"
+        android:text="Notas"
+        android:layout_marginTop="53dp"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spAsig"
+        android:layout_toLeftOf="@+id/btnGuardar"/>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spAsig"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="120dp"
+        android:backgroundTint="@color/orange"
+        android:text="Guardar"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txtN1"
+        android:text="Nota 1"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNotas"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/edtN1"
+        android:layout_width="50dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNotas"
+        android:layout_toEndOf="@+id/txtN1"
+        android:layout_alignBaseline="@+id/txtN1"/>
+
+    <TextView
+        android:id="@+id/txtN2"
+        android:text="Nota 2"
+        android:textColor="@color/white"
+        android:layout_marginTop="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtN1"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/edtN2"
+        android:layout_width="50dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtN1"
+        android:layout_toEndOf="@+id/txtN2"
+        android:layout_alignBaseline="@+id/txtN2"/>
+
+    <TextView
+        android:id="@+id/txtN3"
+        android:text="Nota 3"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtN2"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/edtN3"
+        android:layout_width="50dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtN2"
+        android:layout_toEndOf="@+id/txtN3"
+        android:layout_alignBaseline="@+id/txtN3"/>
+
+    <Button
+        android:id="@+id/btnPro"
+        android:text="Calcular promedio"
+        android:textSize="22dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtN3"/>
+
+    <TextView
+        android:id="@+id/txtSuPro"
+        android:text="Su Promedio es: "
+        android:textSize="32dp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPro"/>
+
+    <TextView
+        android:id="@+id/txtApr"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSuPro"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+        android:text="y esta"
+        android:textSize="32dp" />
+
+
+</RelativeLayout>
+

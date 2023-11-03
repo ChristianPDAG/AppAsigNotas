@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1084750236694",
+    "firebase_url": "https://evaluacioniot-default-rtdb.firebaseio.com",
+    "project_id": "evaluacioniot",
+    "storage_bucket": "evaluacioniot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084750236694:android:6712f6d6d89f2dfa8bf937",
+        "android_client_info": {
+          "package_name": "com.example.eva1_asignotas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFYjohQzZpCyk1nRm0zP4Yq8g-t785rFs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
